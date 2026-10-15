@@ -1,70 +1,95 @@
-# 🎬 Netflix Data Analytics Dashboard
+# 🎬 Netflix Movies and TV Shows Analytics Dashboard
 
 ## 📌 Project Overview
 
-The **Netflix Data Analytics Dashboard** is a data analysis and visualization project that explores Netflix's content catalogue using Microsoft Excel, SQL Server, and Power BI.
+The Netflix Movies and TV Shows Analytics Dashboard is a data analytics project developed to explore and visualize patterns in Netflix's content catalogue.
 
-The project focuses on understanding content distribution, ratings, release-year trends, movie durations, TV show seasons, countries, and the timeline of titles added to Netflix. The raw dataset was prepared in Excel, analysed using SQL queries, and visualized through an interactive two-page Power BI dashboard.
+The project uses Microsoft Excel for dataset preparation, Microsoft SQL Server for data storage and querying, and Microsoft Power BI for interactive dashboard development. The dashboard presents insights into content distribution, ratings, release trends, titles added over time, country-wise distribution, and duration.
 
-## 🎯 Project Objectives
-
-- Analyse the distribution of Movies and TV Shows.
-- Identify the most common content ratings.
-- Explore the number of titles released each year.
-- Examine trends in titles added to Netflix over time.
-- Analyse movie durations and TV show seasons.
-- Explore the countries associated with Netflix titles.
-- Present key findings through an interactive dashboard.
+The dashboard consists of two pages: **Content Overview** and **Content & Trends**, providing a structured view of the dataset through interactive visualizations.
 
 ## 🛠️ Tools & Technologies
 
-| Tool | Purpose |
-|---|---|
-| Microsoft Excel | Raw data inspection and cleaning |
-| Microsoft SQL Server | Data querying, validation, aggregation, and analysis |
-| SQL Server Management Studio (SSMS) | Writing and executing SQL queries |
-| Microsoft Power BI | Dashboard design and data visualization |
-| DAX | Creating KPI measures |
+- **Microsoft Excel** — Dataset preparation and cleaning
+- **Microsoft SQL Server** — Data storage and querying
+- **Microsoft Power BI** — Interactive dashboard development and data visualization
+- **Power Query** — Data transformation and preparation
 
-## 🧹 Data Cleaning & Preparation
+## 📊 Dashboard Preview
 
-Excel was used to inspect and prepare the raw dataset before analysis. The data was then imported into SQL Server for validation and querying.
+### 1. Content Overview
 
-The preparation and validation workflow focused on:
-- Inspecting the dataset structure and column values.
-- Checking missing values and duplicate titles.
-- Reviewing date formats and data types.
-- Preparing data for analysis and visualization.
-- Considering multiple-country entries when analysing country distribution.
+This page provides a high-level summary of the Netflix dataset using KPI cards and visualizations.
 
+**Key Visualizations:**
+- **Total Titles:** Displays the total number of records analyzed.
+- **Movies:** Shows the number of movie titles.
+- **TV Shows:** Shows the number of TV show titles.
+- **Movie Share:** Displays the percentage of movies in the dataset.
+- **Content Type Distribution:** Compares movies and TV shows using a donut chart.
+- **Titles Added Over Time:** Tracks the number of titles added to Netflix by year.
+- **Top 5 Content Ratings:** Highlights the five most frequent content ratings.
+- **Netflix Content by Country:** Uses a geographic map to explore country-wise content distribution.
 
-## 💡 Skills Demonstrated
+### 2. Content & Trends
 
-- Data Cleaning and Preparation
-- Exploratory Data Analysis (EDA)
-- SQL Query Writing
-- Aggregate Functions and Grouping
-- Data Validation
-- Date and Data Type Handling
-- Data Visualization
-- KPI Development
-- Power BI Dashboard Design
-- Data Interpretation
-- Analytical Thinking
+This page focuses on content patterns, release history, ratings, and duration.
 
+**Key Visualizations:**
+- **Titles Released by Year:** Shows the distribution of titles by release year.
+- **Content Ratings by Type:** Compares movie and TV show ratings using a stacked column chart.
+- **Movie Duration Distribution:** Compares the runtimes of movies in the dataset.
+- **TV Shows by Number of Seasons:** Shows the distribution of TV shows according to season count.
 
-## 🚀 How to Explore the Project
+## 🔍 Key Insights
 
-1. Download or clone this repository.
-2. Open `Netflix_Analysis.sql` in SQL Server Management Studio.
-3. Execute the relevant queries against the `NetflixAnalytics` database.
-4. Open the Power BI `.pbix` file in Power BI Desktop, if provided.
-5. Use the dashboard navigation and visual interactions to explore the data.
+- Movies represent approximately **67.9%** of the dataset, while TV shows account for approximately **32.1%**.
+- Content ratings vary across the catalogue, with the dashboard highlighting the most frequently occurring ratings.
+- Release-year analysis shows how the distribution of titles varies across different years.
+- The titles-added trend provides a separate view of when content was added to Netflix.
+- Country-wise analysis explores the geographic distribution of titles in the dataset.
+- Duration analysis highlights differences in movie runtimes and TV show season counts.
 
-## 👩‍💻 About
+*These insights are based on the dataset analyzed in the project and may change if the underlying data is updated.*
 
-This project was developed as part of my data analytics learning journey to gain practical experience with Excel, SQL Server, and Power BI.
+## 🎯 Project Objectives
 
-**Tools:** Excel | SQL Server | Power BI | DAX
+- Analyze the distribution of movies and TV shows.
+- Identify frequently occurring content ratings.
+- Explore title release patterns and yearly additions.
+- Examine country-wise content distribution.
+- Analyze movie runtimes and TV show season counts.
+- Present findings through an interactive, multi-page Power BI dashboard.
 
-**Focus:** Data Cleaning | SQL Analysis | Data Visualization | Dashboard Development
+## 📈 Dashboard Features
+
+- KPI cards for key metrics
+- Donut chart for content type distribution
+- Line charts for yearly trends
+- Bar charts for rating and duration analysis
+- Stacked column chart for rating comparisons
+- Geographic map for country-wise analysis
+- Interactive content-type slicer
+- Consistent Netflix-inspired visual theme
+
+## 📚 Skills Demonstrated
+
+- Data cleaning and preparation
+- SQL querying and data analysis
+- Data transformation using Power Query
+- Exploratory data analysis
+- Data visualization using Power BI
+- KPI design and selection of appropriate charts
+- Dashboard layout and data storytelling
+
+## 📝 Conclusion
+
+This project demonstrates how Excel, SQL Server, and Power BI can be used together to prepare, analyze, and visualize a dataset. Through interactive charts and a two-page dashboard, the project makes it easier to explore Netflix content distribution, ratings, release patterns, and duration.
+
+Building this dashboard provided practical experience in data analysis, data transformation, visualization, and communicating insights through a business intelligence solution.
+
+---
+
+**Project Category:** Data Analytics | Business Intelligence
+
+**Developed using:** Microsoft Excel, SQL Server, Power BI, and Power Query
